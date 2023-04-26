@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .title{
+            font-size: 48px;
+        }
+        .text{
+            font-size: 20px;
+            margin-top: -10px;
+            margin-bottom: 60px;
+        }
+        .form{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+        }
+        .label{
+            font-size: 20px;
+        }
+        .input{
+            width: 250px;
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="title">{{heading}}</h1>
+        <p class="text">{{content}}</p> 
+        <form class="form" action="home.html">
+            <label class="label" for="usuario">Usuário:</label>
+            <input class="input" type="text" name="usuario">
+            <label class="label" for="senha">Senha:</label>
+            <input class="input" type="text" name="senha">
+            <input type="submit" value="entrar">
+        </form>  
+    </div>
+</body>
+</html>
